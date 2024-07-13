@@ -1,0 +1,30 @@
+<!-- Создай страницу для вывода информации пользователя -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    {% block content %}
+    <h1 style="margin-top: 20px; margin-left: 10px;">
+        Спасибо за заполнение формы
+    </h1>
+    <p style="margin-top: 20px; margin-left: 10px;">
+        Ваше имя: {{name}}
+    </p>
+    <p style="margin-top: 20px; margin-left: 10px;">
+        Ваше email: {{email}}
+    </p>
+    <p style="margin-top: 20px; margin-left: 10px;">
+        Ваш адресс: {{address}}
+    </p>
+    <p style="margin-top: 20px; margin-left: 10px;">
+
+        Время доставки: {{date}}
+    </p>
+    {% endblock %}
+</body>
+</html>
